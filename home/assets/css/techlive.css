@@ -1,0 +1,87 @@
+.principal {
+    width: 78%;
+    margin: 2rem auto;
+   }
+   .principal .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .principal .title h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+   }
+   .galeria {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 5vw);
+   }
+   .imgGaleria {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+   }
+   .itemGaleria {
+    overflow: hidden;
+   }
+   .item01 {
+    grid-column: 1 / span 3;
+    grid-row: 1 /span 9;
+   }
+   .item02 {
+    grid-column: 4 / span 2;
+    grid-row: 1 /span 2;
+   }
+   .item03 {
+    grid-column: 6 / span 3;
+    grid-row: 1 /span 5;
+   }
+   .item04 {
+    grid-column: 4 / span 2;
+    grid-row: 3 /span 3;
+   }
+   .item05 {
+    grid-column: 4 / span 7;
+    grid-row: 4 /span 6;
+    z-index: -1;
+   }
+   .item06 {
+    grid-column: 9 / span 2;
+    grid-row: 3 /span 3;
+   }
+
+
+   
+   /* COMEÇO IMAGEM CARRO 7  */
+
+   .item07 {
+    grid-column: 9 / span 2;
+    grid-row: 1 /span 2;
+   }
+
+    /* FNAL IMAGEM CARRO 7  */
+
+
+
+   img {
+    transition: 0.5s;
+   }
+   img:hover {
+    transform: scale(1.2);
+   }
+   .item05 video {
+    transition: 0.5s;
+   }
+   .item05 video:hover {
+    transform: scale(1.2);
+   }
+   .item01 video {
+    transition: 0.5s;
+   }
+   .item01 video:hover {
+    transform: scale(1.2);
+   }

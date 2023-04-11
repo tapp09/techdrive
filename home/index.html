@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/carhome.css">
+    <link rel="stylesheet" href="./assets/css/geral.css">
+    <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/recomendação.css">
+    <link rel="stylesheet" href="./assets/css/videohome.css">
+    <link rel="stylesheet" href="./assets/css/rodape.css">
+    <link rel="stylesheet" href="./assets/css/techlive.css">
+    <link rel="stylesheet" href="./assets/css/faleconosco.css">
+
+    <title>TechMotors</title>
+</head>
+
+<body>
+
+
+    <!-- teste botão-->
+    <button class="botao" onclick="abrirFaleConosco()">Fale Conosco</button>
+    <div class="box-questions" id="box-questions">
+        <div class="header">
+            <div class="img-chat"></div>
+          <div class="text-chat">
+            <h3 class="nome-chat">Suporte</h3>
+            <h5 class="status-chat">Tempo de Resposta: Aprox. 1 minuto</h3>
+          </div>
+          <button class="fechar" onclick="fecharFaleConosco()"> X </button>
+        </div>
+        <h5 id="status"></h5>
+        <div id="history">
+          <!-- respostas do playground -->
+        </div>
+        <div class="footer">
+                <input type="text" id="message-input" placeholder="Qual sua dúvida?">
+                <button class="btn-submit" id="btn-submit" onclick="sendMessage()">Enviar</button>
+        </div>
+      </div>
+    <!-- final botao-->
+
+   <!--Menu-->
+    <section class="navbar">
+        <nav>
+            <div class="logo">
+                <img src="./assets/images/logo.png"  width="80px"/>
+            </div>
+            <div class="navtools">
+                <ul>
+                    <li><a class="selected" href="">Inicio</a></li>
+                    <li><a href="">Modelos</a></li>
+                    <li><a href="">Compre Agora</a></li>
+                    <li><a href="">Nossa Marca</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </div>
+            <div class="accounttools">
+                <ul>
+                    <li><a href="">Cadastro</a></li>
+                    <li><a onclick="openLoginForm()" class="nav__links caixa__login">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    <!-- Final do Menu-->
+
+        <!--PopUp Login-->
+        <div id="loginForm" class="modal">
+            <div class="modalcont">
+              <span class="close" onclick="closeLoginForm()">&times;</span>
+              <h2>Login</h2>
+                <form method="POST" target="_blank" action="index.html"  >
+                    <div class="caixa__login-input">
+                        <input name="email" type="text" required />
+                        <label>Email</label>
+                    </div>
+                    <div class="caixa__login-input">
+                        <input name="senha"type="password" required />
+                        <label>Senha</label>
+                    </div>
+                    <a href="submit" value="acessar">
+                       
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Acessar
+                    </a>
+                </form>
+            </div>
+        </div>    
+    </section>
+        <!--Final PopUp Login-->    
+
+        <!--BackGround Video-->    
+    <section class="videohome">
+        <video autoplay loop muted>
+            <source src="./assets/video/pik.mp4" type="video/mp4" />
+        </video>
+        <!--Final BackGround Video--> 
+
+        <!--BackGround Texto-->    
+        <div class="textvideo">
+            <div class="conj">
+                <!--Efeito texto digitação--> 
+            <div class="textopad">
+                <h2><span>B</span><span>e</span><span>m</span>
+                    <span>V</span><span>i</span><span>n</span><span>d</span><span>o</span></h2>
+            </div>
+            <div class="textoani">
+                <h1></h1>
+            </div></div>
+            
+            <p>
+            </p>
+            <!--Final Efeito texto digitação--> 
+
+            <!--Efeito Botão Background--> 
+            <a class="button_home" href="#">
+                <span class="top-key"></span>
+                <span class="text">Comprar Agora</span>
+                <span class="bottom-key-1"></span>
+                <span class="bottom-key-2"></span>
+            </a>
+            <!--Efeito Botão Background--> 
+        </div>
+    </section>
+    <!--Final BackGround-->    
+
+    <!--Seção Lançamentos --> 
+    <section class="car-home">
+            <div class="two-cars">
+                <div class="car-home1">
+                    <div class="car-home-txt">
+                        <p>BMW I4. Perfomance M, 100% energia solar.</p>
+                        <a href="#">Saiba Mais</a>
+                    </div>
+                </div>
+                <div class="car-home2">
+                    <div class="car-home-txt">
+                        <p>Lamborghini Urus. 100% energia solar.</p>
+                        <a href="#">Saiba Mais</a>  
+                        
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--Final Seção Lançamentos --> 
+
+    <!--Seção Recomendações --> 
+    <section class="recomendação">
+        <div class="recomend">
+            <div class="reco-title">
+                <p>Mais Potentes</p>
+            </div>
+            <div class="reco-cars">
+                <div class="carro1">
+                    <img src="./assets/images/carro1.png" width="350px"/>
+                    <a href="">Aproveite a chance</a>
+                    <div class="qualid">
+                        <div class="q1">
+                            <div class="simb">
+                                <img src="./assets/images/check.png" width="17px"/>
+                            </div>
+                            <div class="txt">Novo Design e mais tecnológico.</div>
+                        </div>
+                        <div class="q1">
+                            <div class="simb">
+                                <img src="./assets/images/check.png" width="17px"/>
+                            </div>
+                            <div class="txt">Potência de 292cv.</div>
+                        </div>
+                        <div class="q1">
+                            <div class="simb">
+                                <img src="./assets/images/check.png" width="17px"/>
+                            </div>
+                            <div class="txt">Torque de 420Nm.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carro1">
+                    <img src="./assets/images/carro2.png" width="360px"/>
+                    <a class="rebaixado2" href="">Aproveite a chance</a>
+                    <div class="qualid">
+                        <div class="q1">
+                            <div class="simb"><img src="./assets/images/check.png" width="17px"/></div>
+                            <div class="txt">Potência 326cv e Torque de 630Nm.</div>
+                        </div>
+                        <div class="q1">
+                            <div class="simb"><img src="./assets/images/check.png" width="17px"/></div>
+                            <div class="txt">Aceleração 0-100km em 6,1s.</div>
+                        </div>
+                        <div class="q1">
+                            <div class="simb"><img src="./assets/images/check.png" width="17px"/></div>
+                            <div class="txt">Autonomia de até 425km (WLTP).</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carro1">
+                    <img src="./assets/images/carro3.png" width="380px"/>
+                    <a class="rebaixado" href="">Aproveite a chance</a>
+                    <div class="qualid">
+                        <div class="q1">
+                            <div class="simb"><img src="./assets/images/check.png" width="17px"/></div>
+                            <div class="txt">Motor BMW TwinTurbo de 6 cilindros.</div>
+                        </div>
+                        <div class="q1">
+                            <div class="simb"><img src="./assets/images/check.png" width="17px"/></div>
+                            <div class="txt">Potência de 510cv.</div>
+                        </div>
+                        <div class="q1">
+                            <div class="simb"><img src="./assets/images/check.png" width="17px"/></div>
+                            <div class="txt">Torque de 650Nm.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <!--Seção Recomendações --> 
+
+    <!--Tech Live-->
+    <section class="techlive">
+        <div class="tech">
+            <main class="principal">
+                <div class="title">
+                    <h2>Tech Live</h2>
+                </div>
+                <section class="galeria">
+                    <figure class="itemGaleria item01">
+                        <video src="./assets/video/vid1.mp4" autoplay loop muted preload="auto"></video>
+                    </figure>
+
+                    <!--COMEÇO IMAGEM CARRO 2-->
+                    <figure class="itemGaleria item02">
+                        <img src="./assets/images/img2.jpg" alt="Imagem 02" class="imgGaleria">
+                    </figure>
+                    <!--FINAL IMAGEM CARRO 2-->
+
+
+                    <figure class="itemGaleria item03">
+                        <img src="./assets/images/img6.PNG" alt="Imagem 03" class="imgGaleria">
+                    </figure>
+                    <figure class="itemGaleria item04">
+                        <img src="./assets/images/img3.PNG" alt="Imagem 04" class="imgGaleria">
+                    </figure>
+                    <figure class="itemGaleria item05">
+                        <video src="./assets/video/vid2.mp4" autoplay loop muted preload="auto"></video>
+                    </figure>
+                    <figure class="itemGaleria item06">
+                        <img src="./assets/images/img5.PNG" alt="Imagem 06" class="imgGaleria">
+                    </figure>
+
+
+                    <!--COMEÇO IMAGEM CARRO 7-->
+                    <figure class="itemGaleria item07">
+                        <img src="./assets/images/img7.jpg" alt="Imagem 07" class="imgGaleria">
+                    </figure>
+                    <!--fINAL IMAGEM CARRO 7-->
+
+
+                </section>
+            </main>
+        </div>
+    </section>
+
+    <!-- Seção Rodapé-->
+    <section class="foot">
+        <div class="rodape">
+            <footer>
+                <div class="rod1">
+                    <div class="c1">
+                        <div class="c1-title">
+                            <h2>Contato</h2>
+                        </div>
+                        <div class="c1-links">
+                            <a href="#">Fale com a TechDrive</a>
+                            <a href="#">Carreiras</a>
+                            <a href="#">Visita à Fábrica</a>
+                        </div>
+                    </div>
+                    <div class="c1">
+                        <div class="c1-title">
+                            <h2>Meu Carro</h2>
+                        </div>
+                        <div class="c1-links">
+                            <a href="#">Modelos e Preços</a>
+                            <a href="#">Seguro</a>
+                            <a href="#">Autoinsights</a>
+                            <a href="#">Autopago</a>
+                        </div>
+                    </div>
+                    <div class="c1">
+                        <div class="c1-title">
+                            <h2>BMW ConnectedDrive</h2>
+                        </div>
+                        <div class="c1-links">
+                            <a href="#">Fale conosco</a>
+                            <a href="#">FAQ</a>
+                        </div>
+                    </div>
+                    <div class="c1">
+                        <div class="c1-title">
+                            <h2>Informações Legais</h2>
+                        </div>
+                        <div class="c1-links">
+                            <a href="#">Política de Cookies</a>
+                            <a href="#">Política de Privacidade</a>
+                            <a href="#">Manual de Segurança</a>
+                            <a href="#">Informações Legais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="rod2">
+                    <div class="nome">© TECHMOTORS GROUP Brasil 2023</div>
+                    <div class="redessociais">
+                        <div class="icon">
+                            <a href="#">
+                                <img src="./assets/images/whats.png" alt="" width="40px">
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="#">
+                               <img src="./assets/images/youtube.png" alt="" width="40px"> 
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="#">
+                                <img src="./assets/images/face.png" alt="" width="40px">
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="#">
+                                <img src="./assets/images/twitter.png" alt="" width="40px">
+                            </a>
+                        </div>
+                        <div class="icon">
+                            <a href="#">
+                              <img src="./assets/images/insta.png" alt="" width="40px">  
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </footer>
+        </div>
+    </section>
+
+
+
+
+
+    <script src="./assets/js/efeito-home-brilho.js" ></script>
+    <script src="./assets/js/pop.js" ></script>
+    <script src="./assets/js/faleconosco.js"></script>
+</body>
+</html>

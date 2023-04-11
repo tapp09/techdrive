@@ -1,0 +1,171 @@
+.box-questions{
+    margin-top: 3rem;
+    background-color: white;
+    color: black;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    display: none;
+    right: 50px;
+    bottom: 100px;
+    animation-name: opacity;
+    animation-duration: 1.5s;
+  }
+  
+  .header{
+    background-color: red;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    font-size: 1.4rem;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+  .footer{
+    border-radius: 0 0 10px 10px;
+    padding: 1rem;
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  
+  input{
+    width: 50%;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+    background-color: rgb(27, 27, 27);
+    color: white;
+  }
+  
+  .btn-submit{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+  }
+  
+    .btn-submit:hover{
+    cursor: pointer;
+    transition: .4s;
+  }
+  
+  #history{
+    padding: 1rem;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 320px;
+  }
+  
+  .box-my-message{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .box-response-message{
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .my-message,
+  .response-message{
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    margin: 0;
+  }
+  
+  .my-message{
+    text-align: right;
+    background-color: gray;
+  }
+  
+  .response-message{
+    text-align: left;
+    background-color: gray;
+  }
+  
+
+.botao {
+  background-color: rgb(226, 23, 23);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 999;
+  animation-name: opacitybot;
+  animation-duration: 20s;
+}
+.botao:hover {
+  background-color: white;
+  color: red;
+}
+.img-chat {
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    background-image: url(/home/assets/images/mulher-sorrindo.jpg);
+    background-position: right;
+    background-size: cover;
+}
+.text-chat {
+    font-size: 20px;
+    text-align: left;
+}
+.status-chat {
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+}
+.nome-chat {
+    font-weight: normal;
+}
+#message-input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 60%;
+}
+
+.fechar {
+    border: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+@keyframes opacity {
+    from {opacity: 0;}
+    to {opacity: 100%;}
+  }
+
+  @keyframes opacitybot {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 100%;
+    }
+  }

@@ -1,0 +1,227 @@
+.videohome {
+    width: 100%;
+    height:  89vh;
+    background-color: rgba(0, 0, 0, 0.247);
+    z-index: 1;
+}
+.videohome video{
+position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+.textvideo {
+    width: 90%;
+    height: inherit;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: left;
+    flex-direction: column;
+}
+.conj {
+    text-transform: uppercase;
+    line-height: 100px;
+}
+.textopad {
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+}
+.textoani {
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+}
+.textvideo p {
+    text-align: center;
+    width: 550px;
+    margin-top: 30px;
+}
+
+.sombra {
+    animation: animacaoH1 3s infinite ease-in-out;
+}
+
+.textvideo {
+    width: 90%;
+    height: inherit;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: left;
+    flex-direction: column;
+}
+.conj {
+    text-transform: uppercase;
+    line-height: 100px;
+}
+.textopad {
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+}
+.textoani {
+    font-size: 70px;
+    margin: 0;
+    padding: 0;
+}
+.textvideo p {
+    text-align: center;
+    width: 550px;
+    margin-top: 30px;
+}
+.textopad span {
+    animation: brilho 2s ease-in infinite;
+}
+
+.textopad span:nth-last-of-type(2) {
+    animation-delay: 0.25s;
+}
+.textopad span:nth-last-of-type(3) {
+    animation-delay: 0.50s;
+}
+.textopad span:nth-last-of-type(4) {
+    animation-delay: 0.75s;
+}
+.textopad span:nth-last-of-type(5) {
+    animation-delay: 1s;
+}
+.textopad span:nth-last-of-type(6) {
+    animation-delay: 1.25s;
+}
+.textopad span:nth-last-of-type(7) {
+    animation-delay: 1.50s;
+}
+.textopad span:nth-last-of-type(8) {
+    animation-delay: 1.75s;
+}
+
+
+
+
+@keyframes brilho {
+    0% {
+        color: black;
+        text-shadow: 0 0 12px black,
+        0 0 50px black,
+        0 0 100px black;
+    }
+    10%, 90% {
+        color: white;
+        text-shadow: none;
+    }
+}
+
+
+
+.button_home {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 1.25em 2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 13px;
+    margin-right: 170px;
+    margin-top: 40px;
+   }
+   
+   .button_home::before {
+    content: " ";
+    width: 1.5625rem;
+    height: 2px;
+    background: white;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+   }
+   
+   .button_home .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+   }
+   
+   .button_home .top-key {
+    height: 2px;
+    width: 1.5625rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+   }
+   
+   .button_home .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+   }
+   
+   .button_home .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #e8e8e8;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+   }
+   
+   .button_home:hover {
+    color: white;
+    background: black;
+   }
+   
+   .button_home:hover::before {
+    width: 0.9375rem;
+    background: white;
+   }
+   
+   .button_home:hover .text {
+    color: white;
+    padding-left: 1.5em;
+   }
+   
+   .button_home:hover .top-key {
+    left: -2px;
+    width: 0px;
+   }
+   
+   .button_home:hover .bottom-key-1,
+   .button_home:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+   }

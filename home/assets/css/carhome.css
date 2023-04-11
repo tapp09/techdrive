@@ -1,0 +1,59 @@
+.car-home {
+    width: 100%;
+    height: 45vh;
+   }
+   .two-cars {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 5px;
+   }
+   .car-home1 {
+    flex: 1;
+    height: 100%;
+    background: url("/home/assets/images/car1.png");
+    background-position: bottom;
+    background-size: cover;
+    margin-right: 2.5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+   }
+   .car-home2 {
+    flex: 1;
+    background: url("/home/assets/images/car2.png");
+    background-position: bottom;
+    background-size: cover;
+    height: 100%;
+    margin-left: 2.5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+   }
+
+   .car-home-txt {
+    width: 500px;
+    height: 150px;
+    margin-left: 50px;
+   }
+   .car-home-txt p {
+    color: white;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 30px;
+   }
+   .car-home-txt a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    padding: 12px 80px;
+    font-size: 18px;
+    font-weight: bold;
+   }
+   .car-home-txt a:hover {
+    color: gray;
+    border: 2px solid gray;
+   }
