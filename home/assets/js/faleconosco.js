@@ -12,7 +12,7 @@ function fecharFaleConosco() {
 
 
 // Chave de API do OpenAI
-const apiKey = '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'
+const apiKey = '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'
 
 function sendMessage(){
     var message = document.getElementById('message-input')

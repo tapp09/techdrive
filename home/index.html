@@ -54,12 +54,11 @@
                     <li><a href="">Modelos</a></li>
                     <li><a href="">Compre Agora</a></li>
                     <li><a href="">Nossa Marca</a></li>
-                    <li><a href="">Contato</a></li>
                 </ul>
             </div>
             <div class="accounttools">
                 <ul>
-                    <li><a href="">Cadastro</a></li>
+                    <li><a onclick="openCadastForm()" class="nav__links caixa__cadastro">Cadastro</a></li>
                     <li><a onclick="openLoginForm()" class="nav__links caixa__login">Login</a></li>
                 </ul>
             </div>
@@ -80,6 +79,62 @@
                         <input name="senha"type="password" required />
                         <label>Senha</label>
                     </div>
+                    <a href="submit" value="acessar">
+                       
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Acessar
+                    </a>
+                </form>
+            </div>
+        </div>   
+        <div id="CadastroForm" class="modal">
+            <div class="modalcont2">
+              <span class="close" onclick="closeCadastForm()">&times;</span>
+              <h2>Cadastre-se</h2>
+                <form method="POST" target="_blank" action="index.html"  >
+                    <div class="inputs">
+                        <div class="caixa__cadastro-input">
+                            <input name="name" type="text" required />
+                            <label>Nome Completo</label>
+                        </div>
+                        <div class="caixa__cadastro-input">
+                            <input name="CPF" oninput="mascara(this)" type="text" required>
+                            <label>CPF</label>
+                        </div> 
+                    </div>
+
+                    <div class="inputs">
+                        <div class="caixa__cadastro-input">
+                            <input id="cep" name="cep" type="text" required value="" size="10" maxlength="9" onblur="pesquisacep(this.value);"/>
+                            <label for="cep">CEP</label>
+                        </div>
+                        <div class="caixa__cadastro-input">
+                            <input id="rua" name="rua" type="text" size="60" required />
+                            <label for="rua">Rua</label>
+                        </div>
+                    </div>
+                    
+                    <div class="inputs">
+                        <div class="caixa__cadastro-input">
+                            <input id="cidade" name="cidade" type="text" size="40" required />
+                            <label for="cidade">Cidade</label>
+                        </div>
+                        <div class="caixa__cadastro-input">
+                            <input id="bairro" name="bairro" type="text" size="40" required />
+                            <label for="bairro">Bairro</label>
+                        </div>
+                    </div>
+                    <div class="input1">
+                        <div class="caixa__cadastro-input">
+                            <input id="uf" name="uf" type="text" size="2" required />
+                            <label for="uf">Estado</label>
+                        </div>
+                    </div>
+                        
+                    
                     <a href="submit" value="acessar">
                        
                         <span></span>
@@ -356,5 +411,7 @@
     <script src="./assets/js/efeito-home-brilho.js" ></script>
     <script src="./assets/js/pop.js" ></script>
     <script src="./assets/js/faleconosco.js"></script>
+    <script src="./assets/js/cpf.js"></script>
+    <script src="./assets/js/endereço.js"></script>
 </body>
 </html>
