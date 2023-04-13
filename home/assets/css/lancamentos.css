@@ -1,0 +1,159 @@
+.lancamentos {
+    width: 100%;
+    height: 70vh;
+    background-color: black;
+}
+.sl1 {
+    width: 100%;
+    height: 70vh;
+    background-image: url(/home/assets/images/opa.PNG);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.sl2 {
+    width: 100%;
+    height: 70vh;
+    background-image: url(/home/assets/images/opa.PNG);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.sl3 {
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(36, 35, 35);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.text-lancamento {
+    width: 100%;
+    height: 100%;
+    margin-left: 140px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lanc-title2 {
+    font-size: 70px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-display: swap;
+    font-weight: 700;
+    line-height: 85px;
+    letter-spacing: -1px;
+    color: white;
+
+}
+.arrow {
+    cursor: pointer;
+    height: 40px;
+    transform: translateX(-50%) translateY(-50%);
+    transition: transform 0.1s;
+    width: 30px;
+    margin-top: 70px;
+    margin-left: 50px;
+  }
+  
+  .arrow-top, .arrow-bottom {
+    background-color: #666;
+    height: 4px;
+    width: 100%;
+  }
+  
+  .arrow-top:after, .arrow-bottom:after {
+    background-color: #fff;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: all 0.15s;
+  }
+  
+  .arrow-top {
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+  }
+  
+  .arrow-top:after {
+    left: 100%;
+    right: 0;
+    transition-delay: 0s;
+  }
+  
+  .arrow-bottom {
+    transform: rotate(-45deg);
+    transform-origin: top right;
+  }
+  
+  .arrow-bottom:after {
+    left: 0;
+    right: 100%;
+    transition-delay: 0.15s;
+  }
+  
+  .arrow:hover .arrow-top:after {
+    left: 0;
+    transition-delay: 0.15s;
+  }
+  
+  .arrow:hover .arrow-bottom:after {
+    right: 0;
+    transition-delay: 0s;
+  }
+  
+  .arrow:active {
+    transform: translateX(-50%) translateY(-50%) scale(0.9);
+  }
+
+  .radio-input {
+    box-shadow: -5px -6px 15px rgba(255, 255, 255, 0.5),
+      10px 10px 25px rgba(70, 70, 70, 0.5);
+    height: 70px;
+    width: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 50px;
+    background-color: white;
+    margin-top: 15px;
+  }
+  
+  .radio-input input[type="radio"] {
+    display: none;
+  }
+  
+  .label {
+    font-size: .9rem;
+    font-weight: 600;
+    font-family: 'poppins',sans-serif;
+    padding: 18px 15px;
+    border-radius: 35px;
+    transition: 0.5s;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .radio-input input[type="radio"]:checked + label {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.151),
+      10px 10px 15px rgba(0, 0, 0, 0.218);
+    background: linear-gradient(45deg,rgb(255, 46, 46),rgb(143, 0, 0));
+    color: white;
+    transform: translateY(-4px);
+  }
+  
+  .radio-input input[type="radio"]:hover:not(:checked)+ label {
+    box-shadow: inset 10px 10px 15px rgba(0, 0, 0, 0.151),
+      inset 10px 10px 15px rgba(0, 0, 0, 0.218);
+  }
+
+  .img-lancamento img {
+    margin-top: 100px;
+  }
+  
