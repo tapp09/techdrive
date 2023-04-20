@@ -4,6 +4,9 @@
     background-color: black;
     margin-top: 5px;
     overflow-x: hidden;
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
 }
 .sl1 {
     width: 100%;
@@ -11,31 +14,6 @@
     background-image: url(/home/assets/images/porsche.png);
     background-position: center;
     background-size: cover;
-    position: absolute;
-}
-.sl2 {
-    width: 100%;
-    height: 70vh;
-    background-image: url(/home/assets/images/camaro.png);
-    background-position: bottom;
-    background-size: cover;
-    position: absolute;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    display: none;
-}
-.sl3 {
-    width: 100%;
-    height: 70vh;
-    background-image: url(/home/assets/images/carropp.png);
-    background-position: center;
-    background-size: cover;
-    position: absolute;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    display: none;
 }
 .text-lancamento {
     width: 100%;
@@ -45,6 +23,7 @@
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
+    z-index: 999;
 }
 
 .lanc-title2 {
@@ -84,8 +63,8 @@
  
  .button-lanc:hover {
   color: red;
-  background-color: #E5EDF5;
-  box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+  background-color: black;
+  box-shadow: -2px -1px 8px 0px black, 2px 1px 8px 0px rgba(31, 31, 32, 0.48);
   font-weight: bold;
  }
  
@@ -128,7 +107,8 @@
     color: white;
     transform: translateY(-4px);
   }
-  
+
+
   .radio-input input[type="radio"]:hover:not(:checked)+ label {
     box-shadow: inset 10px 10px 15px rgba(0, 0, 0, 0.151),
       inset 10px 10px 15px rgba(0, 0, 0, 0.218);
