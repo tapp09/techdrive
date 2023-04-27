@@ -104,7 +104,7 @@
             <div class="modalcont2">
               <span class="close" onclick="closeCadastForm()">&times;</span>
               <h2>Cadastre-se</h2>
-                <form method="post" target="_blank" action="inserir.php"  >
+                <form method="post" target="_blank" action="./assets/php/inserir.php"  >
                     <div class="inputs">
                         <div class="caixa__cadastro-input">
                             <input id="nome" name="name" type="text" required />
@@ -155,14 +155,7 @@
                     </div>
                         
                     
-                    <a href="submit" value="acessar">
-                       
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Finalizar Cadastro
-                    </a>
+                    <input type="submit" value="FINALIZAR CADASTRO" />
                     <br/>
                     <div class="buttons">
                         <a href="submit" value="Excluir">

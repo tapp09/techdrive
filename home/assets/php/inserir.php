@@ -12,7 +12,7 @@ $rua = $_POST["rua"];
 $bairro = $_POST["bairro"];
 
 
-$comando = $pdo->prepare("INSERT INTO cadastro (nome, email, cep, cidade, estado, cpf, senha, rua, bairro) VALUES('$nome', $email, $cep, $cidade, $estado, $cpf, $senha, $rua, $bairro)");
+$comando = $pdo->prepare("INSERT INTO cadastro (nome, email, cep, cidade, estado, cpf, senha, rua, bairro) VALUES($nome, $email, $cep, $cidade, $estado, $cpf, $senha, $rua, $bairro)");
 $resultado = $comando->execute();
 
 //para voltar para o formulario
