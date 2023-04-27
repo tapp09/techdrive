@@ -99,18 +99,19 @@
                 </form>
             </div>
         </div>   
+
         <div id="CadastroForm" class="modal">
             <div class="modalcont2">
               <span class="close" onclick="closeCadastForm()">&times;</span>
               <h2>Cadastre-se</h2>
-                <form method="POST" target="_blank" action="index.html"  >
+                <form method="post" target="_blank" action="inserir.php"  >
                     <div class="inputs">
                         <div class="caixa__cadastro-input">
-                            <input name="name" type="text" required />
+                            <input id="nome" name="name" type="text" required />
                             <label>Nome Completo</label>
                         </div>
                         <div class="caixa__cadastro-input">
-                            <input name="CPF" oninput="mascara(this)" type="text" required>
+                            <input id="cpf" name="CPF" oninput="mascara(this)" type="text" required>
                             <label>CPF</label>
                         </div> 
                     </div>
