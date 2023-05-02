@@ -107,11 +107,11 @@
                 <form method="post" target="_blank" action="./assets/php/inserir.php"  >
                     <div class="inputs">
                         <div class="caixa__cadastro-input">
-                            <input id="nome" name="name" type="text" required />
+                            <input id="nome" name="nome" type="text" required />
                             <label>Nome Completo</label>
                         </div>
                         <div class="caixa__cadastro-input">
-                            <input id="cpf" name="CPF" oninput="mascara(this)" type="text" required>
+                            <input id="cpf" name="cpf" oninput="mascara(this)" type="text" required>
                             <label>CPF</label>
                         </div> 
                     </div>
@@ -155,7 +155,7 @@
                     </div>
                         
                     
-                    <input type="submit" value="FINALIZAR CADASTRO" />
+                    <input type="submit" value="FINALIZAR CADASTRO" name="inserir" id="inserir" />
                     <br/>
                     <div class="buttons">
                         <a href="submit" value="Excluir">

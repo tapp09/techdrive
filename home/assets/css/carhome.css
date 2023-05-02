@@ -13,7 +13,7 @@
    }
    .car-home1 {
     flex: 1;
-    height: 45vh;
+    height: 100%;
     background-image: url("/home/assets/images/car1.png");
     background-position: bottom;
     background-size: cover;
@@ -27,7 +27,7 @@
     background-image: url("/home/assets/images/car2.png");
     background-position: bottom;
     background-size: cover;
-    height: 45vh;
+    height: 100%;
     margin-left: 2.5px;
     display: flex;
     justify-content: flex-start;

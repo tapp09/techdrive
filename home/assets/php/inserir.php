@@ -11,13 +11,12 @@ $senha = $_POST["senha"];
 $rua = $_POST["rua"];
 $bairro = $_POST["bairro"];
 
+if(isset($_POST["inserir"])) {
 
-$comando = $pdo->prepare("INSERT INTO cadastro (nome, email, cep, cidade, estado, cpf, senha, rua, bairro) VALUES($nome, $email, $cep, $cidade, $estado, $cpf, $senha, $rua, $bairro)");
-$resultado = $comando->execute();
-
-//para voltar para o formulario
-
-header("location: index.php");
+    $comando = $pdo->prepare("INSERT INTO cadastro VALUES('$nome', '$email', $cep, '$cidade', '$estado', '$cpf', '$senha', '$rua', '$bairro')");
+    $resultado = $comando->execute();
+    header("location: index.php");
+}
 
 
 ?>
