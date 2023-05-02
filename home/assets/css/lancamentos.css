@@ -1,7 +1,10 @@
 .lancamentos {
     width: 100%;
     height: 70vh;
-    background-color: black;
+    background-image: url(/home/assets/images/lambo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     margin-top: 5px;
     overflow-x: hidden;
     display: flex;
